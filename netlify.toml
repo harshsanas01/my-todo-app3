@@ -1,0 +1,4 @@
+[build]
+  command = "npm run build --prefix client"
+  publish = "client/build"
+  functions = "functions"
