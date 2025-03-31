@@ -1,4 +1,7 @@
 [build]
-  command = "npm install --prefix client && npm run build --prefix client"
+  command = "npm install --prefix client && npm install --prefix functions && npm run build --prefix client"
   publish = "client/build"
   functions = "functions"
+
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"
